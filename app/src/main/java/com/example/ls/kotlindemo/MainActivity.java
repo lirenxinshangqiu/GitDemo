@@ -20,9 +20,14 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 Toast.makeText(MainActivity.this, "测试", Toast.LENGTH_SHORT).show();
-
-
                 Toast.makeText(MainActivity.this, "开发", Toast.LENGTH_SHORT).show();
+            }
+        });
+        tv.setOnLongClickListener(new View.OnLongClickListener() {
+            @Override
+            public boolean onLongClick(View v) {
+                Toast.makeText(MainActivity.this, "这个是长按时间", Toast.LENGTH_SHORT).show();
+                return false;
             }
         });
 
